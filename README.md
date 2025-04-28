@@ -51,7 +51,7 @@
 
 **Клонировать репозиторий:**
 ```
-git clone git@gitlab.com:NikitaPreis/neuro_bot.git
+git clone git@github.com:NikitaPreis/neuro_bot.git
 cd neuro_bot
 ```
 
