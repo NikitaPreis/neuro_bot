@@ -1,0 +1,30 @@
+version: '3.9'
+
+volumes:
+  pg_data:
+
+services:
+  db:
+    image: postgres:16.2
+    shm_size: 128mb
+    ports:
+      - '5432:5432'
+    env_file: .env
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    networks:
+      - neuro-bot-net
+
+  bot:
+    build: .
+    ports:
+      - '8000:8000'
+    depends_on:
+      - db
+    env_file: .env
+    networks:
+      - neuro-bot-net
+
+networks:
+  neuro-bot-net:
+    driver: bridge

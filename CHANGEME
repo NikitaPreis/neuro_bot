@@ -1,0 +1,25 @@
+# Файл с переменными окружения.
+# Переименуйте текущий файл в '.env'
+# и установите необходимые переменные окружения.
+
+# Telegram bot token.
+BOT_API_TOKEN=<YOUR-BOT-API-TOKEN>
+
+# Creds for GigaChat
+GIGA_CHAT_CLIENT_ID=<YOUR-GIGA-CHAT-CLIENT-ID>
+GIGA_CHAT_AUTH_KEY=<GIGA-CHAT-AUTH-KEY>
+
+# Creds for PostgreSQL (Docker-Compose)
+POSTGRES_PASSWORD=mysecretpassword
+POSTGRES_USER=postgres
+POSTGRES_DB=neuro_bot
+POSTGRES_HOST=db
+POSTGRES_PORT=5432
+
+# Creds for SQLAlchemy
+DB_DRIVER=postgresql+asyncpg
+DB_PASSWORD=mysecretpassword
+DB_USER=postgres
+DB_NAME=neuro_bot
+DB_HOST=db
+DB_PORT=5432
