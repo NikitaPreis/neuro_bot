@@ -31,7 +31,6 @@
 * SQLAlchemy
 * PostgreSQL
 * Docker
-* GigaChat
 
 ### Схема БД
 
